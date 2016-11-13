@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KUIS FAMILI 100</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="main">
+		<img src="logo.jpg">
+		<h1>SELAMAT DATANG DI KUIS FAMILI 100</h1>
+
+		<h3>Cara main : </h3>
+		<p>Kamu akan menebak jawaban dari soal yang sebelumnya telah kami jadikan survei ke 100 orang secara random. Jika kamu dapat menjawab 6 jawaban terbanyak dari hasil survei tersebut.. Kamu menang!</p>
+		<br>
+		<button class="button" onclick="round1()">Mulai</button>
+		<br><br>
+		<p class="socmed"><a href="https://www.facebook.com/rdtyaarya" target="_blank">facebook</a> | <a href="https:/twitter.com/radityadito" target="_blank">twitter</a> | <a href="https:/github.com/radityaarya" target="_blank">github</a></p>
+		<br>
+		<p class="copyright">© 2016, Raditya Arya.</p>
+		
+		
+</div>
+
+<script type="text/javascript">
+	var soal1 ={
+    pertanyaan : "Sebutkan bandara di Indonesia!",
+    jawaban1 : "soekarno hatta",
+    jawaban2 : "kualanamu",
+	jawaban3 : "juanda",
+	jawaban4 : "adi sucipto",
+	jawaban5 : "ngurah rai",
+	jawaban6 : "halim perdana kusuma"
+};
+
+var tampungJawaban1 = ["______________________","______________________","______________________","______________________","______________________","______________________"];
+
+function round1(){
+	var popUp = prompt("SELAMAT DATANG DI FAMILI 100!" + "\n\n"+ soal1.pertanyaan + "\n1." + tampungJawaban1[0]+ "\n2." + tampungJawaban1[1]+ "\n3." + tampungJawaban1[2]+ "\n4." + tampungJawaban1[3]+ "\n5." + tampungJawaban1[4]+ "\n6." + tampungJawaban1[5]);
+
+	for (var i = 0; i < 5; i++) {
+		if (popUp.toLowerCase() === soal1.jawaban1) {
+			tampungJawaban1.splice(0,1, "soekarno hatta");
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);		
+		}
+        else if (popUp.toLowerCase() === soal1.jawaban2) {
+			tampungJawaban1.splice(1,1, "kualanamu");       
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+        else if (popUp.toLowerCase() === soal1.jawaban3) {
+			tampungJawaban1.splice(2,1, "juanda");       
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+        else if (popUp.toLowerCase() === soal1.jawaban4) {
+    		tampungJawaban1.splice(3,1, "adi sucipto");       
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+        else if (popUp.toLowerCase() === soal1.jawaban5) {
+        	tampungJawaban1.splice(4,1, "ngurah rai");       
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+        else if (popUp.toLowerCase() === soal1.jawaban6) {
+        	tampungJawaban1.splice(5,1, "halim perdana kusuma");       
+            popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+		else{
+    	     popUp = prompt(soal1.pertanyaan + "\n1. " + tampungJawaban1[0]+ "\n2. " + tampungJawaban1[1]+ "\n3. " + tampungJawaban1[2]+ "\n4. " + tampungJawaban1[3]+ "\n5. " + tampungJawaban1[4]+ "\n6. " + tampungJawaban1[5]);
+		}
+	}
+    
+    alert("GAME OVER!" + "\n\nJawaban pertanyaan" + "\n1. soekarno hatta" + "\n2. kualanamu" + "\n3. juanda" + "\n4. adi sucipto" + "\n5. ngurah rai" + "\n6. halim perdana kusuma");
+
+	tampungJawaban1.splice(0,6, "______________________","______________________","______________________","______________________","______________________","______________________");     
+}
+</script>
+</body>
+</html>

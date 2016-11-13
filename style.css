@@ -1,0 +1,50 @@
+body {
+	background-color: #e0fc41;
+}
+
+h1{
+	text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+h3, p{
+	box-sizing: border-box;
+	padding: 0px 230px 0px 230px;
+	text-align: justify;
+}
+
+.button {
+	background-color: #f44336;
+    border: none;
+    padding: 15px 32px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright{
+	text-align: center;
+    font-size: 14px;
+}
+
+.socmed{
+	text-align: center;
+    font-size: 14px;
+}
+
+#main {
+	background-color: white;
+	box-sizing: border-box;
+	font-family: Courier, serif;
+	padding: 70px 50px;
+	margin: 100px 350px 100px 350px;
+}
